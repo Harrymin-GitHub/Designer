@@ -22,6 +22,7 @@ import com.will.weiyuekotlin.component.ApplicationComponent
 import com.minhr.design.common_base.utils.RecyclerviewHelper
 import com.minhr.design.common_ui.lrecyclerview.recyclerview.LRecyclerView
 import com.minhr.design.module_core.adapter.ADA_DesignerList
+import com.minhr.design.module_core.ui.common.ACT_CommonWebView
 import com.smart.novel.util.bindView
 
 
@@ -63,13 +64,15 @@ class ACT_DesignerList : BaseActivity<DesignerPresenter, DesignerModel>(), Desig
             override fun onItemClick(view: View?, holder: RecyclerView.ViewHolder?, position: Int) {
                 var realPos = position - 1
                 var bean = mAdapter!!.dataList[realPos]
-                // 想去官网已下线，演示时打开可用页面
+                // 想去官网/百度在 WebView 易触发「网页无法打开」，改为本地预览
                 ARouter.getInstance().build(ARouterConfig.ACT_WEBVIEW)
-                    .withString(
-                        ARouterConstants.WEB_URL,
-                        "https://www.baidu.com/s?wd=" + bean.userNick
-                    )
+                    .withString(ARouterConstants.WEB_URL, ACT_CommonWebView.LOCAL_PREVIEW_SCHEME)
                     .withString(ARouterConstants.WEB_TITLE, bean.userNick)
+                    .withString(
+                        ARouterConstants.WEB_IMAGE,
+                        bean.userAvatar?.takeIf { it.isNotBlank() } ?: bean.banner
+                    )
+                    .withString(ARouterConstants.WEB_DESC, "设计师主页演示（原想去官网已下线）")
                     .navigation(this@ACT_DesignerList)
             }
 

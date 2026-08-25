@@ -11,28 +11,28 @@ object TopicMockData {
             name = "春日轻盈穿搭",
             image = "https://picsum.photos/id/1015/640/960",
             type = 1,
-            url = "https://www.baidu.com"
+            url = "app://local/preview"
         ),
         TopicBean(
             id = "2",
             name = "设计师灵感集",
             image = "https://picsum.photos/id/1025/640/960",
             type = 1,
-            url = "https://www.baidu.com"
+            url = "app://local/preview"
         ),
         TopicBean(
             id = "3",
             name = "周末慢生活",
             image = "https://picsum.photos/id/1039/640/960",
             type = 1,
-            url = "https://www.baidu.com"
+            url = "app://local/preview"
         ),
         TopicBean(
             id = "4",
             name = "材质与工艺",
             image = "https://picsum.photos/id/1060/640/960",
             type = 1,
-            url = "https://www.baidu.com"
+            url = "app://local/preview"
         )
     )
 

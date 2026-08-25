@@ -20,8 +20,8 @@ class TopicPresenter @Inject constructor() : BasePresenter<TopicContract.View, T
         mView?.showDialogLoading("")
         rxManager?.addObserver(RetrofitManager.doCommonRequest(mModel!!.getTopics(id), object : RxObserverListener<List<TopicBean>>(mView) {
             override fun onSuccess(result: List<TopicBean>?) {
-                val list = if (result.isNullOrEmpty()) TopicMockData.topics() else result
-                mView?.getTopics(list)
+                // 线上想去 H5 已失效，统一本地数据，避免打开死链/百度深链出现「网页无法打开」
+                mView?.getTopics(TopicMockData.topics())
                 mView?.dismissDialogLoading()
             }
 

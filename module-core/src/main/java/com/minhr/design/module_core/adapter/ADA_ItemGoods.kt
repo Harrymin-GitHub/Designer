@@ -12,6 +12,7 @@ import com.minhr.design.common_base.config.arouter.ARouterConstants
 import com.minhr.design.common_base.utils.glide.GlideUtils
 import com.minhr.design.module_core.R
 import com.minhr.design.module_core.bean.GoodsEntity
+import com.minhr.design.module_core.ui.common.ACT_CommonWebView
 
 /**
  *    author : Harrymin
@@ -37,9 +38,14 @@ class ADA_ItemGoods constructor(context: Context) : CommonAdapter<GoodsEntity>(c
 
         holder.setOnClickListener(R.id.iv_image, {
             ARouter.getInstance().build(ARouterConfig.ACT_WEBVIEW)
-                    .withString(ARouterConstants.WEB_TITLE, bean.name)
-                    .withString(ARouterConstants.WEB_URL, bean.h5Url)
-                    .navigation()
+                .withString(ARouterConstants.WEB_TITLE, bean.name)
+                .withString(ARouterConstants.WEB_URL, ACT_CommonWebView.LOCAL_PREVIEW_SCHEME)
+                .withString(ARouterConstants.WEB_IMAGE, bean.image)
+                .withString(
+                    ARouterConstants.WEB_DESC,
+                    bean.title.ifBlank { "商品专题演示（原想去 H5 已下线）" }
+                )
+                .navigation()
         })
     }
 

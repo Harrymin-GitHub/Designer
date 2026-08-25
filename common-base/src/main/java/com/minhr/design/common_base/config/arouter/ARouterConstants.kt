@@ -13,6 +13,10 @@ interface ARouterConstants {
          */
         val WEB_URL = "web_url"
         val WEB_TITLE = "web_title"
+        /** 本地预览页配图（专题等 H5 已下线时使用） */
+        val WEB_IMAGE = "web_image"
+        /** 本地预览页说明文案 */
+        val WEB_DESC = "web_desc"
         val TAGCATEGORY_ID = "tagcategory_id"
         val TAG_ID = "tag_id"
         val TAG_NAME: String = "tag_name"
