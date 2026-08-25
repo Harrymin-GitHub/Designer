@@ -169,9 +169,11 @@ class ACT_GoodsDetail : BaseActivity<GoodsPresenter, GoodsModel>(), GoodsContrac
         tv_comment.setOnClickListener { checkGoodsCom() }
 
         tv_watch_more.setOnClickListener {
-            tv_watch_more.visibility = View.INVISIBLE
+            // android:lines 会同时锁死 min/max；需清掉限制才能展开全文
+            tv_brandStory.ellipsize = null
+            tv_brandStory.minLines = 0
             tv_brandStory.maxLines = Integer.MAX_VALUE
-            tv_brandStory.requestLayout()
+            tv_watch_more.visibility = View.GONE
         }
 
         //默认设置标题栏透明
@@ -240,13 +242,30 @@ class ACT_GoodsDetail : BaseActivity<GoodsPresenter, GoodsModel>(), GoodsContrac
         tv_brandStory.viewTreeObserver.addOnPreDrawListener((object : ViewTreeObserver.OnPreDrawListener {
             override fun onPreDraw(): Boolean {
                 //这个回调会调用多次，获取完行数记得注销监听
-                tv_brandStory.viewTreeObserver.removeOnPreDrawListener(this);
-                Log.e("TAG", "TextView 行数：" + tv_brandStory.lineCount)
-                if (tv_brandStory.lineCount < 3) tv_watch_more.visibility = View.INVISIBLE else tv_watch_more.visibility = View.VISIBLE
+                tv_brandStory.viewTreeObserver.removeOnPreDrawListener(this)
+                val layout = tv_brandStory.layout
+                val ellipsized = layout != null && (0 until layout.lineCount).any { layout.getEllipsisCount(it) > 0 }
+                tv_watch_more.visibility =
+                    if (ellipsized || exceedsThreeLines(tv_brandStory)) View.VISIBLE else View.GONE
                 return false
             }
 
         }))
+    }
+
+    /** 不受 maxLines 限制时，文本实际是否超过 3 行 */
+    private fun exceedsThreeLines(tv: TextView): Boolean {
+        val text = tv.text ?: return false
+        if (text.isEmpty()) return false
+        val availableWidth = tv.width - tv.paddingLeft - tv.paddingRight
+        if (availableWidth <= 0) return false
+        val measured = android.text.StaticLayout.Builder
+            .obtain(text, 0, text.length, tv.paint, availableWidth)
+            .setAlignment(android.text.Layout.Alignment.ALIGN_NORMAL)
+            .setLineSpacing(tv.lineSpacingExtra, tv.lineSpacingMultiplier)
+            .setIncludePad(tv.includeFontPadding)
+            .build()
+        return measured.lineCount > 3
     }
 
     override fun getGoodsDescription(dataList: List<GoodsDesBean>) {
