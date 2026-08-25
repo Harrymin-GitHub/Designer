@@ -44,8 +44,8 @@ object SearchMockData {
         stageRange = listOf("0-100", "100-300", "300-500", "500-99999")
     )
 
-    private fun img(id: Int) = "https://picsum.photos/id/$id/400/400"
-    private fun avatar(id: Int) = "https://picsum.photos/id/$id/120/120"
+    private fun img(id: Int) = "https://picsum.photos/id/$id/320/320"
+    private fun avatar(id: Int) = "https://picsum.photos/id/$id/96/96"
 
     private fun record(
         id: String,

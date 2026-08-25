@@ -101,8 +101,8 @@ object ShoppingMockData {
     )
 
     private fun img(id: Int) = "https://picsum.photos/id/$id/200/200"
-    private fun banner(id: Int) = "https://picsum.photos/id/$id/960/600"
-    private fun avatar(id: Int) = "https://picsum.photos/id/$id/120/120"
+    private fun banner(id: Int) = "https://picsum.photos/id/$id/720/450"
+    private fun avatar(id: Int) = "https://picsum.photos/id/$id/96/96"
 
     private fun product(id: String, brand: String, photoId: Int, keyword: String, price: String) =
         GoodsEntity.ItemProductBean(

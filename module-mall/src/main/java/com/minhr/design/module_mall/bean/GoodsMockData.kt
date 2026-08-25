@@ -5,8 +5,8 @@ package com.minhr.design.module_mall.bean
  */
 object GoodsMockData {
 
-    private fun img(id: Int) = "https://picsum.photos/id/$id/800/800"
-    private fun avatar(id: Int) = "https://picsum.photos/id/$id/120/120"
+    private fun img(id: Int) = "https://picsum.photos/id/$id/480/480"
+    private fun avatar(id: Int) = "https://picsum.photos/id/$id/96/96"
 
     fun goodsContent(productId: String = "9001"): GoodsContentBean {
         val cover = img(292)

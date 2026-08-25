@@ -45,6 +45,8 @@ class ADA_TopicPager constructor(context: Context, datas: List<TopicBean>) : Pag
         for (i in datas.indices) {
             mViewList.add(null)
             mDatas.add(datas[i])
+            // 预热磁盘/内存缓存，减轻 ViewPager 滑动时首次解码等待
+            mContext?.let { GlideUtils.preload(it, datas[i].image) }
         }
         notifyDataSetChanged()
     }
