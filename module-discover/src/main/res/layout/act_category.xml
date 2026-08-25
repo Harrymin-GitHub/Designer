@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jojo.design.module_discover.ui.ACT_Category">
+    tools:context="com.minhr.design.module_discover.ui.ACT_Category">
 
     <include
         android:id="@+id/title"

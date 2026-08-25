@@ -5,7 +5,7 @@
 
         <variable
             name="bean"
-            type="com.jojo.design.common_base.bean.ErrorBean"></variable>
+            type="com.minhr.design.common_base.bean.ErrorBean"></variable>
     </data>
 
 

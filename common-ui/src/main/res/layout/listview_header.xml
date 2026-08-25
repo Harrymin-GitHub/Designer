@@ -74,7 +74,7 @@
                     android:layout_height="10dp"
                     android:visibility="invisible" />
 
-                <com.jojo.design.common_ui.lrecyclerview.view.SimpleViewSwitcher
+                <com.minhr.design.common_ui.lrecyclerview.view.SimpleViewSwitcher
                     android:id="@+id/listview_header_progressbar"
                     android:layout_width="30dp"
                     android:layout_height="30dp"

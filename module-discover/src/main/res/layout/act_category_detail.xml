@@ -47,7 +47,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent" />
 
-                <com.jojo.design.common_ui.view.LetterSpaceTextView
+                <com.minhr.design.common_ui.view.LetterSpaceTextView
                     android:id="@+id/tv_des"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

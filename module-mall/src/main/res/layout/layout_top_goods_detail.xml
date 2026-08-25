@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.jojo.design.common_ui.view.IOSScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.minhr.design.common_ui.view.IOSScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
@@ -88,12 +88,12 @@
             android:background="@color/color_f0f0f0"
             app:layout_constraintTop_toBottomOf="@+id/tv_productDiscountTxt"></View>
 
-        <com.jojo.design.common_ui.view.NoScrollListView
+        <com.minhr.design.common_ui.view.NoScrollListView
             android:id="@+id/gv_guarantees"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/view_line"></com.jojo.design.common_ui.view.NoScrollListView>
+            app:layout_constraintTop_toBottomOf="@+id/view_line"></com.minhr.design.common_ui.view.NoScrollListView>
 
         <View
             android:id="@+id/view_wide_line"
@@ -174,7 +174,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@+id/iv_brand" />
 
-        <com.jojo.design.common_ui.view.OverTextView
+        <com.minhr.design.common_ui.view.OverTextView
             android:id="@+id/tv_brandStory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -250,4 +250,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</com.jojo.design.common_ui.view.IOSScrollView>
+</com.minhr.design.common_ui.view.IOSScrollView>

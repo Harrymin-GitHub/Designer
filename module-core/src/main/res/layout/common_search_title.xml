@@ -17,6 +17,7 @@
         android:id="@+id/et_search"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:background="@drawable/bg_shape_search_000000"
         android:drawableLeft="@drawable/icn_search_little"
         android:focusable="false"

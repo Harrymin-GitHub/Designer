@@ -13,10 +13,10 @@
         android:textColor="@color/color_212121"
         android:textSize="16sp" />
 
-    <com.jojo.design.common_ui.view.NoScrollListView
+    <com.minhr.design.common_ui.view.NoScrollListView
         android:id="@+id/lv_comment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></com.jojo.design.common_ui.view.NoScrollListView>
+        android:layout_height="wrap_content"></com.minhr.design.common_ui.view.NoScrollListView>
 
 
 </LinearLayout>

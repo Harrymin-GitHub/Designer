@@ -6,7 +6,7 @@
     android:background="@color/color_ffffff">
 
 
-    <com.jojo.design.common_ui.view.DragSlideLayout
+    <com.minhr.design.common_ui.view.DragSlideLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -14,7 +14,7 @@
 
         <include layout="@layout/layout_bottom_goods_detail"></include>
 
-    </com.jojo.design.common_ui.view.DragSlideLayout>
+    </com.minhr.design.common_ui.view.DragSlideLayout>
 
     <include
         android:id="@+id/layout_title_root"

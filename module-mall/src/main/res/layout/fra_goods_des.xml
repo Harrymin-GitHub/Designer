@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.jojo.design.common_ui.view.VerticalBottomRecyclerView
+    <com.minhr.design.common_ui.view.VerticalBottomRecyclerView
         android:id="@+id/lv_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,6 +14,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_image"
-        app:layout_constraintTop_toTopOf="parent"></com.jojo.design.common_ui.view.VerticalBottomRecyclerView>
+        app:layout_constraintTop_toTopOf="parent"></com.minhr.design.common_ui.view.VerticalBottomRecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

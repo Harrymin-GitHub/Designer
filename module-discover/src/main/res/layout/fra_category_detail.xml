@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.jojo.design.common_ui.lrecyclerview.recyclerview.LRecyclerView
+    <com.minhr.design.common_ui.lrecyclerview.recyclerview.LRecyclerView
         android:id="@+id/rv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></com.jojo.design.common_ui.lrecyclerview.recyclerview.LRecyclerView>
+        android:layout_height="match_parent"></com.minhr.design.common_ui.lrecyclerview.recyclerview.LRecyclerView>
 </androidx.constraintlayout.widget.ConstraintLayout>

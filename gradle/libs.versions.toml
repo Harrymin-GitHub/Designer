@@ -1,0 +1,127 @@
+[versions]
+agp = "9.3.2"
+kotlin = "2.2.10"
+kotlinMetadataJvm = "2.2.10"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.6.1"
+activityKtx = "1.8.0"
+appcompat = "1.7.1"
+material = "1.12.0"
+constraintlayout = "2.2.1"
+recyclerview = "1.3.2"
+cardview = "1.0.0"
+multidex = "2.0.1"
+fragmentKtx = "1.8.8"
+annotation = "1.9.1"
+
+retrofit = "2.11.0"
+okhttp = "4.12.0"
+rxjava = "2.2.21"
+rxandroid = "2.1.1"
+rxlifecycle = "2.2.2"
+rxcache = "1.8.3-2.x"
+rxpermissions = "0.9.5"
+rxerrorhandler = "2.1.1"
+
+glide = "4.16.0"
+arouter = "1.5.2"
+dagger = "2.57.2"
+eventbus = "3.3.1"
+room = "2.7.2"
+
+autolayout = "1.4.5"
+flycoTabLayout = "2.1.2"
+smartTabLayout = "1.6.1"
+banner = "2.0.5"
+overscroll = "1.0.4"
+gsyVideoPlayer = "2.1.3"
+lottie = "2.5.4"
+pickerview = "3.2.5"
+photoview = "1.2.3"
+numberprogressbar = "1.2"
+nineoldandroids = "2.4.0"
+paginate = "0.5.1"
+vlayout = "1.1.0"
+bindingAdapter = "1.0.1"
+ijkplayer = "0.8.3"
+videocache = "2.6.4"
+transitionseverywhere = "1.7.0"
+jjwt = "0.9.1"
+jwtdecode = "1.1.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
+androidx-multidex = { group = "androidx.multidex", name = "multidex", version.ref = "multidex" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+retrofit-adapter-rxjava2 = { group = "com.squareup.retrofit2", name = "adapter-rxjava2", version.ref = "retrofit" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+rxjava = { group = "io.reactivex.rxjava2", name = "rxjava", version.ref = "rxjava" }
+rxandroid = { group = "io.reactivex.rxjava2", name = "rxandroid", version.ref = "rxandroid" }
+rxlifecycle = { group = "com.trello.rxlifecycle2", name = "rxlifecycle", version.ref = "rxlifecycle" }
+rxlifecycle-android = { group = "com.trello.rxlifecycle2", name = "rxlifecycle-android", version.ref = "rxlifecycle" }
+rxlifecycle-components = { group = "com.trello.rxlifecycle2", name = "rxlifecycle-components", version.ref = "rxlifecycle" }
+rxcache = { group = "com.github.VictorAlbertos.RxCache", name = "runtime", version.ref = "rxcache" }
+rxpermissions = { group = "com.tbruyelle.rxpermissions2", name = "rxpermissions", version.ref = "rxpermissions" }
+rxerrorhandler = { group = "me.jessyan", name = "rxerrorhandler", version.ref = "rxerrorhandler" }
+
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+glide-okhttp3 = { group = "com.github.bumptech.glide", name = "okhttp3-integration", version.ref = "glide" }
+
+arouter = { group = "com.alibaba", name = "arouter-api", version.ref = "arouter" }
+arouter-compiler = { group = "com.alibaba", name = "arouter-compiler", version.ref = "arouter" }
+dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
+dagger-compiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "dagger" }
+eventbus = { group = "org.greenrobot", name = "eventbus", version.ref = "eventbus" }
+
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-rxjava2 = { group = "androidx.room", name = "room-rxjava2", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+
+autolayout = { group = "com.zhy", name = "autolayout", version.ref = "autolayout" }
+flyco-tablayout = { group = "com.flyco.tablayout", name = "FlycoTabLayout_Lib", version.ref = "flycoTabLayout" }
+smarttablayout = { group = "com.ogaclejapan.smarttablayout", name = "library", version.ref = "smartTabLayout" }
+smarttablayout-utils = { group = "com.ogaclejapan.smarttablayout", name = "utils-v4", version.ref = "smartTabLayout" }
+banner = { group = "com.bigkoo", name = "convenientbanner", version.ref = "banner" }
+overscroll = { group = "me.everything", name = "overscroll-decor-android", version.ref = "overscroll" }
+gsyvideo-player = { group = "com.shuyu", name = "GSYVideoPlayer", version.ref = "gsyVideoPlayer" }
+lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie" }
+pickerview = { group = "com.contrarywind", name = "Android-PickerView", version.ref = "pickerview" }
+photoview = { group = "com.github.chrisbanes.photoview", name = "library", version.ref = "photoview" }
+numberprogressbar = { group = "com.daimajia.numberprogressbar", name = "library", version.ref = "numberprogressbar" }
+nineoldandroids = { group = "com.nineoldandroids", name = "library", version.ref = "nineoldandroids" }
+paginate = { group = "com.github.markomilos", name = "paginate", version.ref = "paginate" }
+vlayout = { group = "com.alibaba.android", name = "vlayout", version.ref = "vlayout" }
+binding-adapter = { group = "com.github.GraceJoJo", name = "DataBindingBaseAdapter", version.ref = "bindingAdapter" }
+ijkplayer-java = { group = "tv.danmaku.ijk.media", name = "ijkplayer-java", version.ref = "ijkplayer" }
+ijkplayer-exo = { group = "tv.danmaku.ijk.media", name = "ijkplayer-exo", version.ref = "ijkplayer" }
+videocache = { group = "com.danikula", name = "videocache", version.ref = "videocache" }
+transitionseverywhere = { group = "com.andkulikov", name = "transitionseverywhere", version.ref = "transitionseverywhere" }
+jjwt = { group = "io.jsonwebtoken", name = "jjwt", version.ref = "jjwt" }
+jwtdecode = { group = "com.auth0.android", name = "jwtdecode", version.ref = "jwtdecode" }
+kotlin-metadata-jvm = { group = "org.jetbrains.kotlin", name = "kotlin-metadata-jvm", version.ref = "kotlinMetadataJvm" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }

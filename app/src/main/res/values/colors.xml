@@ -3,4 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <!-- Designer 应用图标背景色，与自定义 launcher 图一致 -->
+    <color name="ic_launcher_background">#1C1B1A</color>
 </resources>

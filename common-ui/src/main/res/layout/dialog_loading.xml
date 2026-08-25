@@ -9,14 +9,14 @@
     android:orientation="vertical"
     android:padding="10dp">
 
-    <com.jojo.design.common_ui.LoadingCircleView
+    <com.minhr.design.common_ui.LoadingCircleView
         android:id="@+id/loading_view"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="10dp"/>
 
 
-    <!--<com.jojo.design.common_base.view.IOSLoadingView-->
+    <!--<com.minhr.design.common_base.view.IOSLoadingView-->
         <!--android:layout_width="30dp"-->
         <!--android:layout_height="30dp" />-->
 
